@@ -11,33 +11,97 @@
 body {
     margin: 0;
     padding: 0;
+    width: 500px;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
     font-size: 16px;
-    line-height: 1.6;
+    text-align: left;
 }
 
+h2 {
+    font-family: 'Raleway', serif;
+    font-size: 2rem;
+}
+
+.obr {
+    width: 500px;
+}
 
 /* HLAVICKA */
 
+header {
+    text-align: center;
+    color: white;
+    background-image: url("../../images/island-hlavicka.jpg");
+    max-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    
+
+
+
 .titulek {
     font-family: 'Raleway', serif;
+    font-size: 3rem;
 }
 
+.perex {
+    font-size: 1rem;
+    padding-left: 80px;
+    padding-right: 80px;
+   /* padding-bottom: 20px;
+    border-bottom: 2px solid white;*/
+    
+}
 
+.autor {
+    font-size: 1rem;
+    font-style: italic;
+}
+/* MAIN */
+main {
+    width: 100%;
+    padding: 30px;
+    text-align: justify;
+}
 /* MENU */
+.menu {
+text-align: center;
+font-size: 2rem;
+text-transform:uppercase;
+list-style-type: none;
 
+}
 
 
 
 /* OBSAH */
+.uvod {
 
-
+}
+ .popisek {
+     text-align: center;
+ }
 
 
 /* FOTOGALERIE */
+.galerie {
+display: block;
+}
 
+.foto {
+width: auto;
+
+}
 
 
 
 /* PATICKA */
+footer, a {
+    font-size: 0.8rem;
+    color: grey;
+    text-align:left;
+}
