@@ -22,6 +22,7 @@ body {
     font-size: 16px;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
+    line-height: 1.4;
 }
 
 h2 {
@@ -92,10 +93,11 @@ header {
 /* MAIN */
 
 main {
-    width: 100%;    
+    width: 100%;
 }
+
 article {
-    width: 100%;    
+    width: 100%;
     padding: 30px;
     text-align: left;
 }
@@ -141,7 +143,8 @@ article {
     font-weight: normal;
 }
 
-.popisek a, .popisek-copy a {
+.popisek a,
+.popisek-copy a {
     color: grey;
 }
 
@@ -173,15 +176,16 @@ footer a {
     text-decoration: none;
 }
 
+footer {
+    padding: 15px 30px;
+}
+
 /*---------VERZE PRO TABLET-------------*/
 
 @media (min-width: 500px) and (max-width: 1000px) {
 
     /* menu v radku */
-    body {
-        ;
-    }
-
+    
     .menu {
         display: flex;
         justify-content: space-around;
@@ -198,37 +202,60 @@ footer a {
 
     }
 
-    .menu li:last-child  {
+    .menu li:last-child {
         border-right: none;
     }
 
     /*popisky obrazku*/
 
-    
-    .popisek {
+
+    .foto {
         position: relative;
     }
 
-    .popisek-copy {
+    figcaption {
+        width: 100%;
+        height: 30%;
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 0;
+        left: 0;
+        color: white;
+        background-color: rgba(73, 73, 73, 0.5);        
+        
     }
 
-    /* galerie - fotky po dvou */
-
-    .galerie {
-        display: flex;
-        flex-wrap: wrap;
+    .popisek {
+        margin: 0 !important;
+        color: white;
+        display: none;
+        
     }
-
-    .foto {
-        width: 50%;
-        margin-left: 0px;
-        margin-right: 0px;
+    .foto:hover .popisek {
+        display: block;
     }
+    figcaption .popisek-copy, figcaption .popisek-copy a {
+        color: white;
+    }
+/* galerie - fotky po dvou */
 
-    .foto:hover {}
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.foto {
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 }
+
+/*---------VERZE PRO PC-------------*/
+
+@media (min-width: 1000px) {
+    
+}
+
+
+
