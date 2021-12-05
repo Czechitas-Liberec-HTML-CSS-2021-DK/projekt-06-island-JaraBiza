@@ -185,7 +185,7 @@ footer {
 @media (min-width: 500px) and (max-width: 1000px) {
 
     /* menu v radku */
-    
+
     .menu {
         display: flex;
         justify-content: space-around;
@@ -196,18 +196,28 @@ footer {
         padding-right: 30px;
     }
 
-    .menu li {
-        border-right: 1px solid lightgray;
-
-
+    .menu a {
+        font-size: 0.8rem;
     }
 
-    .menu li:last-child {
-        border-right: none;
-    }
 
     /*popisky obrazku*/
+    .obr {
+        position: relative;
+    }
 
+    .obr p,
+    .obr a {
+        color: white;
+    }
+
+    .obr p {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+
+        font-size: 0.7rem;
+    }
 
     .foto {
         position: relative;
@@ -220,42 +230,160 @@ footer {
         bottom: 0;
         left: 0;
         color: white;
-        background-color: rgba(73, 73, 73, 0.5);        
-        
+        background-color: rgba(73, 73, 73, 0.5);
+
     }
 
     .popisek {
         margin: 0 !important;
         color: white;
         display: none;
-        
+
     }
-    .foto:hover .popisek {
-        display: block;
-    }
-    figcaption .popisek-copy, figcaption .popisek-copy a {
+
+    figcaption .popisek-copy,
+    figcaption .popisek-copy a {
         color: white;
     }
-/* galerie - fotky po dvou */
 
-.galerie {
-    display: flex;
-    flex-wrap: wrap;
-}
+    /* galerie - fotky po dvou */
 
-.foto {
-    width: 50%;
-    margin-left: 0px;
-    margin-right: 0px;
-}
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foto {
+        width: 50%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
 }
 
 /*---------VERZE PRO PC-------------*/
 
 @media (min-width: 1000px) {
-    
+
+    body {
+        background-color: beige;
+    }
+
+    main {
+        width: 80%;
+        justify-items: center;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: -30px;
+        border: 2px solid lightgrey;
+    }
+
+    .pc-uvod {
+        display: flex;
+        flex: row;
+    }
+
+    .menu {
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    nav {
+        width: 30%;
+        padding-left: 30px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    nav li {
+        border-bottom: ;
+    }
+
+    .uvod {
+        flex-grow: 1;
+    }
+
+    .obr {
+        position: relative;
+    }
+
+    .proc {
+        width: 70%;
+        margin-right: 30%;
+    }
+    .videt {
+        width: 70%;
+        margin-left: 30%;
+    }
+
+    .obr p,
+    .obr a {
+        color: white;
+    }
+
+    .obr p {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+
+        font-size: 0.7rem;
+    }
+
+    .foto {
+        position: relative;
+    }
+
+    figcaption {
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        background-color: rgba(73, 73, 73, 0.5);
+
+    }
+
+    .popisek {
+        margin: 0 !important;
+        color: white;
+        display: none;
+
+    }
+
+    figcaption .popisek-copy,
+    figcaption .popisek-copy a {
+        color: white;
+    }
+
+    /* galerie - fotky po třech */
+
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foto {
+        width: 33%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .foto:hover .popisek {
+        display: block;
+    }
+
+    footer, footer a {
+        background-color: transparent;
+    }
+    footer {
+        width: 80%;
+        margin: 20px auto;
+        padding: 0;
+    }
+    footer p {
+        margin: 0;
+        padding: 0;
+    }
+
 }
-
-
-
